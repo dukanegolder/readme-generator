@@ -3,7 +3,7 @@
 const inquirer = require('inquirer');
 const fs = require('fs');
 
-const generateReadMe = ({ title, description, name, installation, usage, contributors, test, questions, license }) =>
+const generateReadMe = ({ title, description, name, installation, usage, contributors, test, questions, license, github }) =>
 
 `# ${title}
 
@@ -22,19 +22,20 @@ ${installation}
 ${usage}
 
 
-## Contributors
-${contributors}
-
-
-## Questions
-${questions}
-
 ## License
 ${license}
 
 
+## Contributors
+${contributors}
+
+
 ## Tests
-${test}`;
+${test}
+
+
+## Questions
+${github, questions}`;
 
 inquirer
   .prompt([
@@ -69,16 +70,21 @@ inquirer
         message: 'What are the testing procedures? If none type N/A.',
     },
     {
-        type: 'input',
-        name: 'questions',
-        message: 'Please enter your GitHub username!',
-    },
-    {
       type: 'list',
       name: 'license',
       message: 'Which licesnse would you like to use',
       choices: ['MIT', 'Apache License 2.0', 'Mozilla Public License 2.0']
       
+    }, 
+    {
+        type: 'input',
+        name: 'github',
+        message: 'Please enter your GitHub link!',
+    },
+    {
+        type: 'input',
+        name: 'questions',
+        message: 'Please enter your email for users to reach out with questions!',
     },
   ])
   .then((answers) => {
@@ -88,5 +94,3 @@ inquirer
       err ? console.log(err) : console.log('Successfully created new README!')
     );
   });
-
-  prompt()
