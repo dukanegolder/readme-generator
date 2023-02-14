@@ -26,7 +26,7 @@ N/A
 
 ## Usage
 
-https://drive.google.com/file/d/13qDHFnS80X3611cdxNryBgkYaAGzN8VR/view
+[label](../../Downloads/Readme%20generator%20example%20video.webm)
 
 ## License
 
