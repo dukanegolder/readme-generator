@@ -26,7 +26,8 @@ N/A
 
 ## Usage
 
-[Example video](./Readme%20generator%20example%20video.webm)
+[Example video](./Rea[Readme generator example video.webm](https://user-images.githubusercontent.com/117951485/218888038-edf94965-3186-427d-98e8-8b4a03afe764.webm)
+dme%20generator%20example%20video.webm)
 
 ## License
 
