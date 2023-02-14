@@ -1,5 +1,3 @@
-// TODO: Create a function that returns a license badge based on which license is passed in
-// If there is no license, return an empty string
 function renderLicenseBadge(license) {
   switch (license) {
     case "MIT":
@@ -13,39 +11,44 @@ function renderLicenseBadge(license) {
   }
 }
 
-// TODO: Create a function that returns the license link
-// If there is no license, return an empty string
 function renderLicenseLink(license) {
   switch (license) {
     case "MIT":
-      return "MIT BADGE";
+      return "https://opensource.org/license/mit-0/";
     case "Apache License 2.0":
-      return "Apache Badge";
+      return "https://opensource.org/license/apache2-0-php/";
     case "Mozilla Public License 2.0":
-      return "MOzo";
+      return "https://opensource.org/license/mpl-2-0/";
     default:
       return "";
   }
 }
 
-// TODO: Create a function that returns the license section of README
-// If there is no license, return an empty string
 function renderLicenseSection(license) {
   var sectionStart = `\n## License\n`;
   var sectionEnd = `\n`;
   switch (license) {
     case "MIT":
-      return sectionStart + "" + sectionEnd;
+      return (
+        sectionStart + `MIT License ${renderLicenseLink(license)}` + sectionEnd
+      );
     case "Apache License 2.0":
-      return "";
+      return (
+        sectionStart +
+        `Apache License 2.0 ${renderLicenseLink(license)}` +
+        sectionEnd
+      );
     case "Mozilla Public License 2.0":
-      return "";
+      return (
+        sectionStart +
+        `Mozilla Public License 2.0 ${renderLicenseLink(license)}` +
+        sectionEnd
+      );
     default:
       return "";
   }
 }
 
-// TODO: Create a function to generate markdown for README
 function generateMarkdown({
   title,
   description,
@@ -78,7 +81,7 @@ ${installation}
 
 ## Usage
 ${usage}
-${renderLicenseSection()}
+${renderLicenseSection(license)}
 
 ## Contributors
 ${contributors}
