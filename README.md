@@ -22,7 +22,11 @@ This project is a read me file generator using prompts that create sections and 
 
 ## Installation
 
-N/A
+In order to install inquirer, please use "npm i inquirer@8.2.4"
+
+The application will be invoked by using the following command:
+
+node index.js
 
 ## Usage
 
