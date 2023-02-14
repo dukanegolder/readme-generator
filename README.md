@@ -26,7 +26,7 @@ N/A
 
 ## Usage
 
-[label](../../Downloads/Readme%20generator%20example%20video.webm)
+[Example video](./Readme%20generator%20example%20video.webm)
 
 ## License
 
