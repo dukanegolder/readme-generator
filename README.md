@@ -26,6 +26,8 @@ N/A
 
 ## Usage
 
+[Readme generator example video](https://user-images.githubusercontent.com/117951485/218888211-63bf21c1-969f-4cab-9d7c-c0bb84c1569c.webm)
+
 ## License
 
 MIT License https://opensource.org/license/mit-0/
