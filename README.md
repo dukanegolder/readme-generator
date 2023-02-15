@@ -4,7 +4,7 @@
 
 ## Description
 
-This project is a read me file generator using prompts that create sections and inputs text into a README file from the node terminal.
+This project is meant to be a README file generator using prompts that create sections and inputs text into a README file from the node terminal. The purpose is to make it quick and easy for the user to type up a projec readme and be able to instantly be able to add it to thier own project.
 
 ## Table of Contents
 
