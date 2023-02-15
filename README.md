@@ -26,7 +26,7 @@ In order to install inquirer, please use "npm i inquirer@8.2.4"
 
 The application will be invoked by using the following command:
 
-node index.js
+"node index.js"
 
 ## Usage
 
